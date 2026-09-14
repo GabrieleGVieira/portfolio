@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "introduction": "Introduction",
+    "about": "About",
+    "timeline": "Timeline",
+    "projects": "Projects"
+  },
+  "sidebar": {
+    "name": "Gabriele Vieira",
+    "footerMade": "Made with",
+    "footerAnd": "and"
+  },
+  "hero": {
+    "slide1": {
+      "titleLine1": "Hi!",
+      "titleLine2": "I'm Gabi",
+      "cta": "View CV"
+    },
+    "slide2": {
+      "titleLine1": "I love new",
+      "titleLine2": "CHALLENGES !!",
+      "cta": "View Projects"
+    }
+  },
+  "about": {
+    "metaLabel": "About Me",
+    "heading": "Who Am I?",
+    "paragraph1": "I'm a Software Engineer focused on building reliable, scalable products across frontend and backend. I have 5+ years of experience working across the software development lifecycle, from product discovery and architecture to implementation, testing, deployment and observability.",
+    "paragraph2": "I currently work at Shopee, building technology for large-scale logistics and customs operations, contributing to systems that process millions of shipments every month. I'm particularly interested in distributed systems, developer productivity, observability and AI-powered engineering.",
+    "paragraph3": "I belive that innovation isn't necessarily creating something new and from scratch. If we facilitate the life of at least one person this will already be innovation.",
+    "expertiseMetaLabel": "What I build",
+    "expertiseHeading": "Here are some of my expertise",
+    "fullstack": {
+      "title": "Full-Stack Applications",
+      "description": "I build end-to-end applications using modern frontend and backend technologies, from user interfaces and APIs to databases, integrations and background processing.",
+      "skills": "React · Next.js · Python · Go · PostgreSQL · NoSQL · RabbitMQ · Microservices · Docker · RestAPI"
+    },
+    "systems": {
+      "title": "Scalable & Distributed Systems",
+      "description": "Experience building systems involving APIs, microservices, asynchronous processing, queues, caching and third-party integrations.",
+      "skills": "Go · Python · RabbitMQ · Redis · PostgreSQL · Docker"
+    },
+    "ai": {
+      "title": "AI & Developer Productivity",
+      "description": "I use AI not only as a coding assistant, but as part of engineering workflows for code review, testing, automation, observability and operational analysis.",
+      "skills": "AI Agents · LLMs · Automation · Testing · Observability · Claude · Codex"
+    },
+        "obs": {
+      "title": "Reliability & Observability",
+      "description": "I care about what happens after software reaches production — monitoring systems, understanding failures and using metrics, logs and traces to improve reliability.",
+      "skills": "Grafana · Loki · Kubernetes · OpenTelemetry"
+    }
+  },
+  "timeline": {
+    "metaLabel": "highlights",
+    "heading": "Timeline",
+    "shopee": {
+      "title": "Developer Junior Associate at Shopee Brasil",
+      "period": "2022-present",
+      "bullets": [
+        "Be responsible for the daily agile development ceremonies (Sprint Planning, Sprint Review, Sprint Retrospective and Daily Meeting)",
+        "CI/CD using GitLab",
+        "Act on the refinement and prioritization of tasks",
+        "Acting in fronts of frontend and backend development (Vue.js, React, Node.js, Python)",
+        "Act on the correction of bugs",
+        "Perform tests"
+      ],
+      "achievementLabel": "Main Achievement:",
+      "achievement": "Participate in the development and launch of a project that transformed the manual process of product validation and control into a integrated and automated portal, discarding processes made by excel and increasing the control of promotions, discounts and massive masses of data, reducing errors and making the process faster. The application consumes over 200k of upload data per day and is used by more than 200 people in the product team.",
+      "skillsLabel": "Skills:",
+      "skills": "Use Case · Planning Poker · Kanban · Scrum · GitLab · Git · GitFlow · SQLAlchemy · Pytest · Python · FastAPI · Vue.js · React · TypeScript · Docker · MongoDB · NoSQL · Microservices · PostgreSQL"
+    },
+    "inpe": {
+      "title": "Scientific Initiation Scholarship at INPE",
+      "period": "2022-2023",
+      "projectNameLabel": "Project name:",
+      "projectName": "\"Forecasting and monitoring of extreme weather events in Brazil using Artificial Intelligence\".",
+      "objectiveLabel": "Objective:",
+      "objective": "This project aims to implement a system of treatment and analysis of large volumes of data, through Data Science. For this, statistical methods applied to meteorology will be used for quantification of inconsistent data, statistical treatment for an incomplete data series and calculation of metrics, in order to assist the prediction and monitoring of extreme weather events (deep drought and heavy rains).",
+      "skillsLabel": "Skills:",
+      "skills": "Python · Pandas · Sklearn · Keras · MatplotLib · R · netCDF (Network Common Data Form) · GrADS (Grid Analysis and Display System) · CDO (Climate Data Operators) · NCL (NCAR Command Language)"
+    },
+    "edp": {
+      "title": "Intern in Geoprocessing and Quality of Information at EDP Brasil",
+      "period": "2021-2022",
+      "bullets": [
+        "Participate in daily agile development ceremonies (Daily Meeting)",
+        "Develop dashboards in PowerBI for data processing and analysis",
+        "Create and maintain scripts in VBA",
+        "Create and maintain scripts in pyspark and SQL for data extraction and processing",
+        "Assist in the administration and governance of Distributors' data",
+        "Support the monitoring of data processing and systems of technical and commercial from distributors",
+        "Support in monitoring and supporting the demands and projects of the area"
+      ],
+      "achievementLabel": "Main Achievement:",
+      "achievement": "I developed a script using pyspark and SQL that made validations in the company's database according to the business rule. The script fed daily, automatically, a powerBI that brought the numbers of incoscitent data to be analyzed and corrected. Before these validations were done manually, made by excel, and required more time and many situations of inconsistency went unnoticed, besides that now vision has become daily, that is, as up to date as possible.",
+      "skillsLabel": "Skills:",
+      "skills": "Kanban · Scrum · PySpark · VBA (Visual Basic for Applications) · Microsoft Power BI · SQL · Oracle · Azure Data Bricks"
+    }
+  },
+  "projects": {
+    "metaLabel": "My Work",
+    "heading": "Recent Projects",
+    "gabiflix": {
+      "title": "GABIFLIX",
+      "description": "Creating a clone website of the Netflix streaming platform."
+    },
+    "banking": {
+      "title": "Banking System",
+      "description": "This project aims to study object-oriented programming using the Python programming language, with objective To create a banking system with operations such as withdrawal, deposit, view statement, create an account, and create a user."
+    },
+    "crud": {
+      "title": "CRUD - TYPESCRIPT",
+      "description": "Develop a system of type CLI (command-line interface) with the objective to meet the needs of the group World Beauty (fictitious), of the area of aesthetics."
+    },
+    "geo": {
+      "title": "Web Portal for Geoprocessing Satellite Images - Integrator Project",
+      "description": "Development of a web portal with a map interface, based on cloud computing services using tiles, which accesses public satellite images and allows consultation, manipulation and downloading of images to your user."
+    },
+    "stats": {
+      "title": "Web Portal for Statistical Analysis - Integrator Project",
+      "description": "Develop a platform in which journalists from the Vanguarda television network can access information and voter data from different regions of the coverage area in which the network works."
+    },
+    "courses": {
+      "title": "Educational Courses Portal - Integrator Project",
+      "description": "Develop an e-commerce site in which students can access quality didactic contents, fostering culture and adding value to the customer according to business rules."
+    }
+  }
+}

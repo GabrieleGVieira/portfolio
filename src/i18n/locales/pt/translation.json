@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "introduction": "Início",
+    "about": "Sobre",
+    "timeline": "Trajetória",
+    "projects": "Projetos"
+  },
+  "sidebar": {
+    "name": "Gabriele Vieira",
+    "footerMade": "Feito com",
+    "footerAnd": "e"
+  },
+  "hero": {
+    "slide1": {
+      "titleLine1": "Oi!",
+      "titleLine2": "Eu sou a Gabi",
+      "cta": "Ver Currículo"
+    },
+    "slide2": {
+      "titleLine1": "Eu adoro novos",
+      "titleLine2": "DESAFIOS !!",
+      "cta": "Ver Projetos"
+    }
+  },
+  "about": {
+    "metaLabel": "Sobre Mim",
+    "heading": "Quem Sou Eu?",
+    "paragraph1": "Sou uma Engenheira de Software apaixonada, especializada como desenvolvedora Full Stack. Adoro aprender coisas novas e enfrentar novos desafios.",
+    "paragraph2": "Tenho experiência de trabalho com Projetos, Engenharia de Software, Desenvolvimento de Produto e Gestão Ágil de Projetos.",
+    "paragraph3": "Acredito que inovação não é necessariamente criar algo novo do zero. Se facilitarmos a vida de pelo menos uma pessoa, isso já é inovação.",
+    "expertiseMetaLabel": "O que eu faço?",
+    "expertiseHeading": "Algumas das minhas áreas de especialização",
+    "frontend": {
+      "title": "Desenvolvimento Front-End",
+      "description": "Experiência com tecnologias front-end como Javascript/Typescript, Vue.js, React, Node.js, Styled-components, entre outras..."
+    },
+    "backend": {
+      "title": "Desenvolvimento Back-End",
+      "description": "Experiência com tecnologias back-end como Python, CI/CD, FastAPI, Docker, MongoDB, NoSQL, Microsserviços, PostgreSQL, entre outras..."
+    },
+    "agile": {
+      "title": "Gestão Ágil de Projetos",
+      "description": "Experiência com cerimônias de Desenvolvimento Ágil, Scrum, Kanban, Use Case, Planning Poker, GitFlow, JIRA, Confluence, entre outras..."
+    }
+  },
+  "timeline": {
+    "metaLabel": "destaques",
+    "heading": "Trajetória",
+    "shopee": {
+      "title": "Desenvolvedora Júnior Associada na Shopee Brasil",
+      "period": "2022-atual",
+      "bullets": [
+        "Responsável pelas cerimônias diárias de desenvolvimento ágil (Sprint Planning, Sprint Review, Sprint Retrospective e Daily Meeting)",
+        "CI/CD utilizando GitLab",
+        "Atuação no refinamento e priorização de tarefas",
+        "Atuação nas frentes de desenvolvimento frontend e backend (Vue.js, React, Node.js, Python)",
+        "Atuação na correção de bugs",
+        "Execução de testes"
+      ],
+      "achievementLabel": "Principal Conquista:",
+      "achievement": "Participação no desenvolvimento e lançamento de um projeto que transformou o processo manual de validação e controle de produtos em um portal integrado e automatizado, eliminando processos feitos em excel e aumentando o controle de promoções, descontos e grandes massas de dados, reduzindo erros e tornando o processo mais rápido. A aplicação consome mais de 200 mil registros de upload por dia e é utilizada por mais de 200 pessoas no time de produto.",
+      "skillsLabel": "Habilidades:",
+      "skills": "Use Case · Planning Poker · Kanban · Scrum · GitLab · Git · GitFlow · SQLAlchemy · Pytest · Python · FastAPI · Vue.js · React · TypeScript · Docker · MongoDB · NoSQL · Microsserviços · PostgreSQL"
+    },
+    "inpe": {
+      "title": "Bolsista de Iniciação Científica no INPE",
+      "period": "2022-2023",
+      "projectNameLabel": "Nome do projeto:",
+      "projectName": "\"Previsão e monitoramento de eventos climáticos extremos no Brasil utilizando Inteligência Artificial\".",
+      "objectiveLabel": "Objetivo:",
+      "objective": "Este projeto tem como objetivo implementar um sistema de tratamento e análise de grandes volumes de dados por meio da Ciência de Dados. Para isso, serão utilizados métodos estatísticos aplicados à meteorologia para quantificação de dados inconsistentes, tratamento estatístico de séries de dados incompletas e cálculo de métricas, a fim de auxiliar na previsão e monitoramento de eventos climáticos extremos (secas severas e chuvas intensas).",
+      "skillsLabel": "Habilidades:",
+      "skills": "Python · Pandas · Sklearn · Keras · MatplotLib · R · netCDF (Network Common Data Form) · GrADS (Grid Analysis and Display System) · CDO (Climate Data Operators) · NCL (NCAR Command Language)"
+    },
+    "edp": {
+      "title": "Estagiária em Geoprocessamento e Qualidade da Informação na EDP Brasil",
+      "period": "2021-2022",
+      "bullets": [
+        "Participação nas cerimônias diárias de desenvolvimento ágil (Daily Meeting)",
+        "Desenvolvimento de dashboards no PowerBI para processamento e análise de dados",
+        "Criação e manutenção de scripts em VBA",
+        "Criação e manutenção de scripts em pyspark e SQL para extração e processamento de dados",
+        "Apoio na administração e governança dos dados das Distribuidoras",
+        "Apoio no monitoramento do processamento de dados e sistemas técnicos e comerciais das distribuidoras",
+        "Apoio no acompanhamento das demandas e projetos da área"
+      ],
+      "achievementLabel": "Principal Conquista:",
+      "achievement": "Desenvolvi um script utilizando pyspark e SQL que realizava validações na base de dados da empresa de acordo com a regra de negócio. O script alimentava diariamente e de forma automática um PowerBI que trazia os números de dados inconsistentes a serem analisados e corrigidos. Antes essas validações eram feitas manualmente em excel, exigiam mais tempo e diversas inconsistências passavam despercebidas; além disso, a visão passou a ser diária, ou seja, o mais atualizada possível.",
+      "skillsLabel": "Habilidades:",
+      "skills": "Kanban · Scrum · PySpark · VBA (Visual Basic for Applications) · Microsoft Power BI · SQL · Oracle · Azure Data Bricks"
+    }
+  },
+  "projects": {
+    "metaLabel": "Meu Trabalho",
+    "heading": "Projetos Recentes",
+    "gabiflix": {
+      "title": "GABIFLIX",
+      "description": "Criação de um clone do site da plataforma de streaming Netflix."
+    },
+    "banking": {
+      "title": "Sistema Bancário",
+      "description": "Este projeto tem como objetivo estudar programação orientada a objetos utilizando a linguagem Python, com o propósito de criar um sistema bancário com operações como saque, depósito, extrato, criação de conta e criação de usuário."
+    },
+    "crud": {
+      "title": "CRUD - TYPESCRIPT",
+      "description": "Desenvolvimento de um sistema do tipo CLI (interface de linha de comando) com o objetivo de atender às necessidades do grupo World Beauty (fictício), da área de estética."
+    },
+    "geo": {
+      "title": "Portal Web de Geoprocessamento de Imagens de Satélite - Projeto Integrador",
+      "description": "Desenvolvimento de um portal web com interface de mapa, baseado em serviços de computação em nuvem utilizando tiles, que acessa imagens de satélite públicas e permite consulta, manipulação e download de imagens pelo usuário."
+    },
+    "stats": {
+      "title": "Portal Web de Análise Estatística - Projeto Integrador",
+      "description": "Desenvolvimento de uma plataforma na qual jornalistas da rede de televisão Vanguarda podem acessar informações e dados eleitorais das diferentes regiões da área de cobertura em que a rede atua."
+    },
+    "courses": {
+      "title": "Portal de Cursos Educacionais - Projeto Integrador",
+      "description": "Desenvolvimento de um site de e-commerce no qual estudantes podem acessar conteúdos didáticos de qualidade, fomentando a cultura e agregando valor ao cliente de acordo com as regras de negócio."
+    }
+  }
+}
