@@ -15,7 +15,7 @@ const EXPERTISE_ITEMS = [
   { key: "fullstack", color: 2, icon: <CodeOutlined /> },
   { key: "systems", color: 3, icon: <BulbOutlined /> },
   { key: "ai", color: 5, icon: <RobotOutlined /> },
-  { key: "obs", color: 6, icon: <DashboardOutlined /> },
+  { key: "obs", color: 6, icon: <DashboardOutlined />, centered: true },
 ];
 
 export default function About() {
@@ -60,9 +60,10 @@ export default function About() {
             heading={t("about.expertiseHeading")}
           />
           <div className="row row-pt-md">
-            {EXPERTISE_ITEMS.map(({ key, color, icon }) => (
+            {EXPERTISE_ITEMS.map(({ key, color, icon, centered }) => (
               <ServiceCard
                 key={key}
+                centered={centered}
                 color={color}
                 icon={icon}
                 title={t(`about.${key}.title`)}

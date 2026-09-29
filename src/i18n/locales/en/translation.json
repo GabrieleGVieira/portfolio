@@ -17,8 +17,8 @@
       "linkedin": "LinkedIn"
     },
     "heading": "Who Am I?",
-    "paragraph1": "I'm a Full-Stack Software Engineer focused on Product, specialized in building solutions that solve real user pain points and streamline complex operations. I have 5+ years of experience across the full software development lifecycle — from discovery and architecture to implementation, testing, deployment and observability.",
-    "paragraph2": "I currently work at Shopee as a Software Engineer, building technology for large-scale logistics and customs operations — including the Customs Clearance Platform, integrating Siscomex and J.P. Morgan, which contributed to RioGaleão's operation receiving the Logistics Excellence Program Award — processing 2M+ records and 100K+ invoices per day. I'm particularly interested in distributed systems, developer productivity, observability and AI-powered engineering.",
+    "paragraph1": "I'm a Full-Stack Software Engineer focused on Product, specialized in building solutions that solve real user pain points and streamline complex operations. I have 5+ years of experience across the full software development lifecycle, from discovery and architecture to implementation, testing, deployment and observability.",
+    "paragraph2": "I currently work at Shopee as a Software Engineer, building technology for large-scale logistics and customs operations, including the Customs Clearance Platform, integrating Siscomex and J.P. Morgan, which contributed to RioGaleão's operation receiving the Logistics Excellence Program Award, processing 2M+ records and 100K+ invoices per day. I'm particularly interested in distributed systems, developer productivity, observability and AI-powered engineering.",
     "paragraph3": "I belive that innovation isn't necessarily creating something new and from scratch. If we facilitate the life of at least one person this will already be innovation.",
     "expertiseMetaLabel": "What I build",
     "expertiseHeading": "Here are some of my expertise",
@@ -39,7 +39,7 @@
     },
     "obs": {
       "title": "Reliability & Observability",
-      "description": "I care about what happens after software reaches production — monitoring systems, understanding failures and using metrics, logs and traces to improve reliability.",
+      "description": "I care about what happens after software reaches production, monitoring systems, understanding failures and using metrics, logs and traces to improve reliability.",
       "skills": "Grafana · Elastic · OpenTelemetry · ArgoCD"
     }
   },

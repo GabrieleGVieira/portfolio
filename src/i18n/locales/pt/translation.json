@@ -18,7 +18,7 @@
     },
     "heading": "Quem Sou Eu?",
     "paragraph1": "Sou uma Engenheira de Software Full-Stack com foco em Produto, especializada em desenvolver soluções que resolvem dores reais de usuários e otimizam operações complexas. Tenho mais de 5 anos de experiência atuando em todo o ciclo de desenvolvimento de software, do discovery e arquitetura até implementação, testes, deploy e observabilidade.",
-    "paragraph2": "Atualmente trabalho na Shopee como Engenheira de Software, construindo tecnologia para operações logísticas e aduaneiras de grande escala — incluindo a plataforma de Customs Clearance, que integra Siscomex e J.P. Morgan e contribuiu para que a operação do RioGaleão recebesse o Logistics Excellence Program Award — processando mais de 2 milhões de registros e 100 mil notas fiscais por dia. Tenho interesse especial em sistemas distribuídos, produtividade de desenvolvedores, observabilidade e engenharia potencializada por IA.",
+    "paragraph2": "Atualmente trabalho na Shopee como Engenheira de Software, construindo tecnologia para operações logísticas e aduaneiras de grande escala, incluindo a plataforma de Customs Clearance, que integra Siscomex e J.P. Morgan e contribuiu para que a operação do RioGaleão recebesse o Logistics Excellence Program Award, processando mais de 2 milhões de registros e 100 mil notas fiscais por dia. Tenho interesse especial em sistemas distribuídos, produtividade de desenvolvedores, observabilidade e engenharia potencializada por IA.",
     "paragraph3": "Acredito que inovação não é necessariamente criar algo novo do zero. Se facilitarmos a vida de pelo menos uma pessoa, isso já é inovação.",
     "expertiseMetaLabel": "O que eu faço?",
     "expertiseHeading": "Algumas das minhas áreas de especialização",
@@ -39,7 +39,7 @@
     },
     "obs": {
       "title": "Confiabilidade e Observabilidade",
-      "description": "Me importo com o que acontece depois que o software chega em produção — monitorando sistemas, entendendo falhas e usando métricas, logs e traces para melhorar a confiabilidade.",
+      "description": "Me importo com o que acontece depois que o software chega em produção, monitorando sistemas, entendendo falhas e usando métricas, logs e traces para melhorar a confiabilidade.",
       "skills": "Grafana · Elastic · OpenTelemetry · ArgoCD"
     }
   },
