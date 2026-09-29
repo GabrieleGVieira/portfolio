@@ -1,6 +1,6 @@
 # Personal Page
 
-Repository of my digital resume, live at: https://gabrielegvieira.github.io/gabriele-vieira/
+Repository of my digital resume, live at: [https://gabrielegvieira.github.io/gabriele-vieira/](https://gabrielegvieira.github.io/portfolio/)
 
 ## Tech stack
 
