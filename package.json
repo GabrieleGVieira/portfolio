@@ -2,7 +2,7 @@
   "name": "pg-pessoal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabrielegvieira.github.io/gabriele-vieira/",
+  "homepage": "https://gabrielegvieira.github.io/gabriele-portfolio",
   "dependencies": {
     "@ant-design/icons": "^4.8.3",
     "gh-pages": "^2.0.1",
