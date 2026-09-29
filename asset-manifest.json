@@ -1,13 +1,13 @@
 {
-  "main.css": "/gabriele-vieira/static/css/main.3ca40101.chunk.css",
-  "main.js": "/gabriele-vieira/static/js/main.cce11a88.chunk.js",
-  "main.js.map": "/gabriele-vieira/static/js/main.cce11a88.chunk.js.map",
-  "runtime~main.js": "/gabriele-vieira/static/js/runtime~main.55163748.js",
-  "runtime~main.js.map": "/gabriele-vieira/static/js/runtime~main.55163748.js.map",
-  "static/js/2.9cebefea.chunk.js": "/gabriele-vieira/static/js/2.9cebefea.chunk.js",
-  "static/js/2.9cebefea.chunk.js.map": "/gabriele-vieira/static/js/2.9cebefea.chunk.js.map",
-  "index.html": "/gabriele-vieira/index.html",
-  "precache-manifest.f0d6fa9a459220bf426b46829c06a57d.js": "/gabriele-vieira/precache-manifest.f0d6fa9a459220bf426b46829c06a57d.js",
-  "service-worker.js": "/gabriele-vieira/service-worker.js",
-  "static/css/main.3ca40101.chunk.css.map": "/gabriele-vieira/static/css/main.3ca40101.chunk.css.map"
+  "main.css": "/gabriele-portfolio/static/css/main.3ca40101.chunk.css",
+  "main.js": "/gabriele-portfolio/static/js/main.d0c87e91.chunk.js",
+  "main.js.map": "/gabriele-portfolio/static/js/main.d0c87e91.chunk.js.map",
+  "runtime~main.js": "/gabriele-portfolio/static/js/runtime~main.75beb640.js",
+  "runtime~main.js.map": "/gabriele-portfolio/static/js/runtime~main.75beb640.js.map",
+  "static/js/2.9cebefea.chunk.js": "/gabriele-portfolio/static/js/2.9cebefea.chunk.js",
+  "static/js/2.9cebefea.chunk.js.map": "/gabriele-portfolio/static/js/2.9cebefea.chunk.js.map",
+  "index.html": "/gabriele-portfolio/index.html",
+  "precache-manifest.4fc7691bec555aab2117580091c12c32.js": "/gabriele-portfolio/precache-manifest.4fc7691bec555aab2117580091c12c32.js",
+  "service-worker.js": "/gabriele-portfolio/service-worker.js",
+  "static/css/main.3ca40101.chunk.css.map": "/gabriele-portfolio/static/css/main.3ca40101.chunk.css.map"
 }
