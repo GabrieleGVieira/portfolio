@@ -1,6 +1,5 @@
 {
   "nav": {
-    "introduction": "Introduction",
     "about": "About",
     "timeline": "Timeline",
     "projects": "Projects"
@@ -10,65 +9,66 @@
     "footerMade": "Made with",
     "footerAnd": "and"
   },
-  "hero": {
-    "slide1": {
-      "titleLine1": "Hi!",
-      "titleLine2": "I'm Gabi",
-      "cta": "View CV"
-    },
-    "slide2": {
-      "titleLine1": "I love new",
-      "titleLine2": "CHALLENGES !!",
-      "cta": "View Projects"
-    }
-  },
   "about": {
     "metaLabel": "About Me",
+    "cta": {
+      "downloadCv": "Download CV",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
     "heading": "Who Am I?",
-    "paragraph1": "I'm a Software Engineer focused on building reliable, scalable products across frontend and backend. I have 5+ years of experience working across the software development lifecycle, from product discovery and architecture to implementation, testing, deployment and observability.",
-    "paragraph2": "I currently work at Shopee, building technology for large-scale logistics and customs operations, contributing to systems that process millions of shipments every month. I'm particularly interested in distributed systems, developer productivity, observability and AI-powered engineering.",
+    "paragraph1": "I'm a Full-Stack Software Engineer focused on Product, specialized in building solutions that solve real user pain points and streamline complex operations. I have 5+ years of experience across the full software development lifecycle — from discovery and architecture to implementation, testing, deployment and observability.",
+    "paragraph2": "I currently work at Shopee as a Software Engineer, building technology for large-scale logistics and customs operations — including the Customs Clearance Platform, integrating Siscomex and J.P. Morgan, which contributed to RioGaleão's operation receiving the Logistics Excellence Program Award — processing 2M+ records and 100K+ invoices per day. I'm particularly interested in distributed systems, developer productivity, observability and AI-powered engineering.",
     "paragraph3": "I belive that innovation isn't necessarily creating something new and from scratch. If we facilitate the life of at least one person this will already be innovation.",
     "expertiseMetaLabel": "What I build",
     "expertiseHeading": "Here are some of my expertise",
     "fullstack": {
       "title": "Full-Stack Applications",
       "description": "I build end-to-end applications using modern frontend and backend technologies, from user interfaces and APIs to databases, integrations and background processing.",
-      "skills": "React · Next.js · Python · Go · PostgreSQL · NoSQL · RabbitMQ · Microservices · Docker · RestAPI"
+      "skills": "React · Vue.js · Next.js · TypeScript · Go · PostgreSQL · REST APIs · Docker"
     },
     "systems": {
       "title": "Scalable & Distributed Systems",
       "description": "Experience building systems involving APIs, microservices, asynchronous processing, queues, caching and third-party integrations.",
-      "skills": "Go · Python · RabbitMQ · Redis · PostgreSQL · Docker"
+      "skills": "Python · gRPC · RabbitMQ · Redis · MongoDB · Microservices"
     },
     "ai": {
       "title": "AI & Developer Productivity",
       "description": "I use AI not only as a coding assistant, but as part of engineering workflows for code review, testing, automation, observability and operational analysis.",
       "skills": "AI Agents · LLMs · Automation · Testing · Observability · Claude · Codex"
     },
-        "obs": {
+    "obs": {
       "title": "Reliability & Observability",
       "description": "I care about what happens after software reaches production — monitoring systems, understanding failures and using metrics, logs and traces to improve reliability.",
-      "skills": "Grafana · Loki · Kubernetes · OpenTelemetry"
+      "skills": "Grafana · Elastic · OpenTelemetry · ArgoCD"
     }
   },
   "timeline": {
     "metaLabel": "highlights",
     "heading": "Timeline",
     "shopee": {
-      "title": "Developer Junior Associate at Shopee Brasil",
+      "title": "Software Engineer at Shopee Brasil",
       "period": "2022-present",
       "bullets": [
-        "Be responsible for the daily agile development ceremonies (Sprint Planning, Sprint Review, Sprint Retrospective and Daily Meeting)",
-        "CI/CD using GitLab",
-        "Act on the refinement and prioritization of tasks",
-        "Acting in fronts of frontend and backend development (Vue.js, React, Node.js, Python)",
-        "Act on the correction of bugs",
-        "Perform tests"
+        "Led technical planning and took part in prioritization and architecture decisions across agile cycles, connecting business needs to scalable technical solutions",
+        "Developed and maintained large-scale products, including the Customs Clearance Platform, FBS and Deals Manager System, processing 2M+ records and 100K+ invoices per day",
+        "Worked end-to-end across frontend and backend, using Vue.js, React, Python and Go/Golang",
+        "Built microservices and event-driven systems with PostgreSQL, MongoDB, Redis, RabbitMQ, gRPC and REST APIs",
+        "Implemented CI/CD, automated testing, code reviews and observability with GitLab, ArgoCD, Grafana and Elastic",
+        "Automated processes previously done manually in Excel, reducing errors and increasing the Product team's decision speed",
+        "Used AI tools, such as OpenAI Codex and Claude, to accelerate development and raise the quality of deliverables",
+        "Worked on resolving critical production incidents, ensuring system continuity and reliability"
       ],
       "achievementLabel": "Main Achievement:",
-      "achievement": "Participate in the development and launch of a project that transformed the manual process of product validation and control into a integrated and automated portal, discarding processes made by excel and increasing the control of promotions, discounts and massive masses of data, reducing errors and making the process faster. The application consumes over 200k of upload data per day and is used by more than 200 people in the product team.",
+      "achievement": "I developed the Customs Clearance Platform, integrating Siscomex, J.P. Morgan and external agents to streamline critical customs processes. The solution contributed to RioGaleão's operation receiving the Logistics Excellence Program Award.",
       "skillsLabel": "Skills:",
-      "skills": "Use Case · Planning Poker · Kanban · Scrum · GitLab · Git · GitFlow · SQLAlchemy · Pytest · Python · FastAPI · Vue.js · React · TypeScript · Docker · MongoDB · NoSQL · Microservices · PostgreSQL"
+      "skills": "Go/Golang · Python · React · Vue.js · Next.js · TypeScript · FastAPI · PostgreSQL · MongoDB · Redis · RabbitMQ · gRPC · REST APIs · Microservices · Docker · Kubernetes · GitLab CI/CD · ArgoCD · Pytest · Grafana · Elastic · Scrum · Kanban"
+    },
+    "education": {
+      "title": "Bachelor's Degree in Information Technology",
+      "institution": "Universidade Virtual do Estado de São Paulo (UNIVESP)",
+      "period": "2022-2025",
+      "note": "Final GPA: 8.12"
     },
     "inpe": {
       "title": "Scientific Initiation Scholarship at INPE",
@@ -101,29 +101,64 @@
   "projects": {
     "metaLabel": "My Work",
     "heading": "Recent Projects",
-    "gabiflix": {
-      "title": "GABIFLIX",
-      "description": "Creating a clone website of the Netflix streaming platform."
+    "labels": {
+      "problem": "The Challenge",
+      "solution": "The Solution",
+      "result": "Result",
+      "code": "Code",
+      "demo": "Live Demo",
+      "otherHeading": "Other Projects"
+    },
+    "palpite": {
+      "title": "Palpite!",
+      "description": "A social prediction platform for the 2026 FIFA World Cup, with groups, live rankings and AI match analysis.",
+      "problem": "Friends who want to compete on match predictions usually rely on spreadsheets and chat messages, with no real-time ranking or shared experience.",
+      "solution": "I built mobile (React Native, Expo) and web (React, Vite) apps on Supabase, a Go backend with WebSocket and Redis for real-time rankings, and a Python/FastAPI service using scikit-learn and the Gemini API for natural-language match analysis.",
+      "result": "A full-stack platform where users create prediction groups, compete with virtual Palpicoins, challenge friends and follow live rankings."
+    },
+    "juscash": {
+      "title": "JusCash - DJE Publications Automation",
+      "description": "An automation system that collects and organizes publications from São Paulo's Electronic Justice Gazette (DJE), built as a technical case.",
+      "problem": "Reviewing judicial publications by hand is slow and error-prone, and there was no central place to track their status.",
+      "solution": "I built a Python scraper that collects DJE publications into the database, a Node.js/Prisma API documented with Swagger, and a Next.js frontend (TailwindCSS, Shadcn) with authentication, filters, detail modals and a Kanban board.",
+      "result": "An end-to-end flow from scraping to review, where publications are searched and moved across Kanban stages."
+    },
+    "sgr": {
+      "title": "SGR - Revenue Management System",
+      "description": "A web system to control orders and payments at charity events, built by a team of six as an Integrator Project at Univesp for a real client, Obra Social Célio Lemos.",
+      "problem": "The organization controlled orders and payments manually during charity events, which caused errors and made financial closing harder.",
+      "solution": "Together with a team of six, I built a responsive Next.js interface for mobile and tablet, with PostgreSQL on Neon for cloud storage and CI/CD on Vercel.",
+      "result": "A deployed system that automates order and payment control and supports financial reporting for the organization."
+    },
+    "geo": {
+      "title": "Satellite Imagery Geoprocessing Web Portal",
+      "description": "A satellite imagery geoprocessing web portal, built as a team Integrator Project at Fatec for a real client, Visiona.",
+      "problem": "Remote sensing professionals needed a simple way to search, visualize and download public satellite imagery, without dealing directly with geospatial data APIs.",
+      "solution": "I built the frontend with React, TypeScript and Leaflet for the map interface (pan/zoom), integrated with a Python backend that processes imagery (NumPy, OpenCV) and queries AWS's public satellite catalogs via STAC. The team worked across 4 Scrum sprints.",
+      "result": "A working portal that lets users search, manipulate and download multi-band satellite imagery directly from the browser."
+    },
+    "stats": {
+      "title": "Statistical Analysis Web Portal",
+      "description": "A statistical analysis platform for electoral data, built as a team Integrator Project at Fatec for a real client, the TV Vanguarda network, to be used by its journalists.",
+      "problem": "Journalists needed to explore electoral data from five municipalities in the Paraíba Valley without relying on manual spreadsheets, with charts that were easy to read and export.",
+      "solution": "I processed and cleaned the data with Python and Pandas in Jupyter Notebooks, generating interactive Plotly charts (bar, pie, donut) embedded directly into an HTML/CSS/JavaScript frontend, without a traditional API layer between them. When regional data wasn't available for smaller municipalities, we adapted the scope to city-level analysis.",
+      "result": "An interactive platform where journalists explore data by city and export the charts as PNG."
+    },
+    "rbr": {
+      "title": "RBR Case - Employee Dashboard",
+      "description": "A full-stack administrative dashboard with employee CRUD, built with Next.js, Chakra UI, Redux, Node.js and MongoDB as a technical assessment."
     },
     "banking": {
       "title": "Banking System",
-      "description": "This project aims to study object-oriented programming using the Python programming language, with objective To create a banking system with operations such as withdrawal, deposit, view statement, create an account, and create a user."
+      "description": "A study of object-oriented programming in Python, with withdrawal, deposit, statement and account/user creation operations."
     },
-    "crud": {
-      "title": "CRUD - TYPESCRIPT",
-      "description": "Develop a system of type CLI (command-line interface) with the objective to meet the needs of the group World Beauty (fictitious), of the area of aesthetics."
+    "dog": {
+      "title": "Dog CRUD API",
+      "description": "A REST API in TypeScript to manage dog records, with filters and tests, built as a technical case."
     },
-    "geo": {
-      "title": "Web Portal for Geoprocessing Satellite Images - Integrator Project",
-      "description": "Development of a web portal with a map interface, based on cloud computing services using tiles, which accesses public satellite images and allows consultation, manipulation and downloading of images to your user."
-    },
-    "stats": {
-      "title": "Web Portal for Statistical Analysis - Integrator Project",
-      "description": "Develop a platform in which journalists from the Vanguarda television network can access information and voter data from different regions of the coverage area in which the network works."
-    },
-    "courses": {
-      "title": "Educational Courses Portal - Integrator Project",
-      "description": "Develop an e-commerce site in which students can access quality didactic contents, fostering culture and adding value to the customer according to business rules."
+    "shopping": {
+      "title": "Shopping List",
+      "description": "A React Native mobile app to manage shopping lists, with full CRUD operations."
     }
   }
 }

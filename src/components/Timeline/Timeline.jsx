@@ -1,5 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import SectionHeading from '../common/SectionHeading';
+import TimelineEntry from './TimelineEntry';
+import TimelineDetails from './TimelineDetails';
 
 export default function Timeline() {
   const { t } = useTranslation();
@@ -11,90 +14,65 @@ export default function Timeline() {
     <div>
       <section className="colorlib-experience" data-section="timeline">
         <div className="colorlib-narrow-content">
-          <div className="row">
-            <div
-              className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-              data-animate-effect="fadeInLeft"
-            >
-              <span className="heading-meta">{t('timeline.metaLabel')}</span>
-              <h2 className="colorlib-heading animate-box">{t('timeline.heading')}</h2>
-            </div>
-          </div>
+          <SectionHeading metaLabel={t('timeline.metaLabel')} heading={t('timeline.heading')} />
           <div className="row">
             <div className="col-md-12">
               <div className="timeline-centered">
-                <article
-                  className="timeline-entry animate-box"
-                  data-animate-effect="fadeInLeft"
+                <TimelineEntry
+                  color={3}
+                  icon="icon-pen2"
+                  title={t('timeline.shopee.title')}
+                  period={t('timeline.shopee.period')}
                 >
-                  <div className="timeline-entry-inner">
-                    <div className="timeline-icon color-3">
-                      <i className="icon-pen2" />
-                    </div>
-                    <div className="timeline-label">
-                      <h2>
-                        {t('timeline.shopee.title')} <span>{t('timeline.shopee.period')}</span>
-                      </h2>
-                      {shopeeBullets.map((bullet, index) => (
-                        <p key={index}>◦ {bullet}</p>
-                      ))}
-                      <b>{t('timeline.shopee.achievementLabel')}</b>
-                      <p>◦ {t('timeline.shopee.achievement')}</p>
-                      <p>
-                        <b>{t('timeline.shopee.skillsLabel')} </b>
-                        {t('timeline.shopee.skills')}
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article
-                  className="timeline-entry animate-box"
-                  data-animate-effect="fadeInTop"
+                  <TimelineDetails
+                    bullets={shopeeBullets}
+                    achievementLabel={t('timeline.shopee.achievementLabel')}
+                    achievement={t('timeline.shopee.achievement')}
+                    skillsLabel={t('timeline.shopee.skillsLabel')}
+                    skills={t('timeline.shopee.skills')}
+                  />
+                </TimelineEntry>
+                <TimelineEntry
+                  color={2}
+                  icon="icon-study"
+                  animateEffect="fadeInRight"
+                  title={t('timeline.education.title')}
+                  period={t('timeline.education.period')}
                 >
-                  <div className="timeline-entry-inner">
-                    <div className="timeline-icon color-4">
-                      <i className="icon-pen2" />
-                    </div>
-                    <div className="timeline-label">
-                      <h2>
-                        {t('timeline.inpe.title')} <span>{t('timeline.inpe.period')}</span>
-                      </h2>
-                      <p>
-                        <b>{t('timeline.inpe.projectNameLabel')}</b> {t('timeline.inpe.projectName')}
-                      </p>
-                      <b>{t('timeline.inpe.objectiveLabel')}</b>
-                      <p>{t('timeline.inpe.objective')}</p>
-                      <p>
-                        <b>{t('timeline.inpe.skillsLabel')} </b>
-                        {t('timeline.inpe.skills')}
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article
-                  className="timeline-entry animate-box"
-                  data-animate-effect="fadeInLeft"
+                  <p>{t('timeline.education.institution')}</p>
+                  <p>{t('timeline.education.note')}</p>
+                </TimelineEntry>
+                <TimelineEntry
+                  color={4}
+                  icon="icon-pen2"
+                  animateEffect="fadeInTop"
+                  title={t('timeline.inpe.title')}
+                  period={t('timeline.inpe.period')}
                 >
-                  <div className="timeline-entry-inner">
-                    <div className="timeline-icon color-5">
-                      <i className="icon-pen2" />
-                    </div>
-                    <div className="timeline-label">
-                      <h2>
-                        {t('timeline.edp.title')} <span>{t('timeline.edp.period')}</span>
-                      </h2>
-                      {edpBullets.map((bullet, index) => (
-                        <p key={index}>◦ {bullet}</p>
-                      ))}
-                      <b>{t('timeline.edp.achievementLabel')}</b>
-                      <p>◦ {t('timeline.edp.achievement')}</p>
-                      <p>
-                        <b>{t('timeline.edp.skillsLabel')} </b>
-                        {t('timeline.edp.skills')}
-                      </p>
-                    </div>
-                  </div>
-                </article>
+                  <p>
+                    <b>{t('timeline.inpe.projectNameLabel')}</b> {t('timeline.inpe.projectName')}
+                  </p>
+                  <b>{t('timeline.inpe.objectiveLabel')}</b>
+                  <p>{t('timeline.inpe.objective')}</p>
+                  <TimelineDetails
+                    skillsLabel={t('timeline.inpe.skillsLabel')}
+                    skills={t('timeline.inpe.skills')}
+                  />
+                </TimelineEntry>
+                <TimelineEntry
+                  color={5}
+                  icon="icon-pen2"
+                  title={t('timeline.edp.title')}
+                  period={t('timeline.edp.period')}
+                >
+                  <TimelineDetails
+                    bullets={edpBullets}
+                    achievementLabel={t('timeline.edp.achievementLabel')}
+                    achievement={t('timeline.edp.achievement')}
+                    skillsLabel={t('timeline.edp.skillsLabel')}
+                    skills={t('timeline.edp.skills')}
+                  />
+                </TimelineEntry>
                 <article
                   className="timeline-entry begin animate-box"
                   data-animate-effect="fadeInBottom"

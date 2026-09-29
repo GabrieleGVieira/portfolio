@@ -1,67 +1,26 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import projects from '../../data/projects';
+import SectionHeading from '../common/SectionHeading';
+import ProjectCaseStudy from './ProjectCaseStudy';
+import OtherProjects from './OtherProjects';
 
 export default function Projects() {
   const { t } = useTranslation();
+  const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
     <div>
       <section className="colorlib-work" data-section="projects">
         <div className="colorlib-narrow-content">
-          <div className="row">
-            <div
-              className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-              data-animate-effect="fadeInLeft"
-            >
-              <span className="heading-meta">{t('projects.metaLabel')}</span>
-              <h2 className="colorlib-heading animate-box">{t('projects.heading')}</h2>
-            </div>
-          </div>
-          <div className="row">
-            {projects.map(({ key, image, animateEffect, codeUrl, liveUrl }) => (
-              <div
-                key={key}
-                className="col-md-4 animate-box"
-                data-animate-effect={animateEffect}
-              >
-                <div className="project" style={{ backgroundImage: `url(${image})` }}>
-                  <div className="desc">
-                    <div className="con">
-                      <h3>
-                        <a href="work.html">{t(`projects.${key}.title`)}</a>
-                      </h3>
-                      <span>{t(`projects.${key}.description`)}</span>
-                      <p className="icon">
-                        <span>
-                          <a
-                            className="btn btn-primary btn-learn"
-                            href={codeUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <i className="icon-code" />
-                          </a>
-                        </span>
-                        {liveUrl && (
-                          <span>
-                            <a
-                              className="btn btn-primary btn-learn"
-                              href={liveUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <i className="icon-open" />
-                            </a>
-                          </span>
-                        )}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <SectionHeading metaLabel={t('projects.metaLabel')} heading={t('projects.heading')} />
+          <div className="project-case-list">
+            {featuredProjects.map((project, index) => (
+              <ProjectCaseStudy key={project.key} project={project} reverse={index % 2 === 1} />
             ))}
           </div>
+          <OtherProjects projects={otherProjects} />
         </div>
       </section>
     </div>

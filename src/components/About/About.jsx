@@ -1,5 +1,22 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  CodeOutlined,
+  BulbOutlined,
+  RobotOutlined,
+  DashboardOutlined,
+} from "@ant-design/icons";
+import Button from "../common/Button";
+import SectionHeading from "../common/SectionHeading";
+import ServiceCard from "./ServiceCard";
+import links from "../../data/links";
+
+const EXPERTISE_ITEMS = [
+  { key: "fullstack", color: 2, icon: <CodeOutlined /> },
+  { key: "systems", color: 3, icon: <BulbOutlined /> },
+  { key: "ai", color: 5, icon: <RobotOutlined /> },
+  { key: "obs", color: 6, icon: <DashboardOutlined /> },
+];
 
 export default function About() {
   const { t } = useTranslation();
@@ -18,6 +35,14 @@ export default function About() {
                   <div className="about-desc">
                     <span className="heading-meta">{t("about.metaLabel")}</span>
                     <h2 className="colorlib-heading">{t("about.heading")}</h2>
+                    <p className="about-cta">
+                      <Button href={links.github} icon="icon-github" className="btn-outline btn-sm">
+                        {t("about.cta.github")}
+                      </Button>
+                      <Button href={links.linkedin} icon="icon-linkedin2" className="btn-sm">
+                        {t("about.cta.linkedin")}
+                      </Button>
+                    </p>
                     <p>{t("about.paragraph1")}</p>
                     <p>{t("about.paragraph2")}</p>
                     <p>{t("about.paragraph3")}</p>
@@ -30,68 +55,21 @@ export default function About() {
       </section>
       <section className="colorlib-about">
         <div className="colorlib-narrow-content">
-          <div className="row">
-            <div
-              className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-              data-animate-effect="fadeInLeft"
-            >
-              <span className="heading-meta">
-                {t("about.expertiseMetaLabel")}
-              </span>
-              <h2 className="colorlib-heading">
-                {t("about.expertiseHeading")}
-              </h2>
-            </div>
-          </div>
+          <SectionHeading
+            metaLabel={t("about.expertiseMetaLabel")}
+            heading={t("about.expertiseHeading")}
+          />
           <div className="row row-pt-md">
-            <div className="col-md-4 text-center animate-box">
-              <div className="services color-1">
-                <span className="icon">
-                  <i className="icon-phone3" />
-                </span>
-                <div className="desc">
-                  <h3>{t("about.fullstack.title")}</h3>
-                  <p>{t("about.fullstack.description")}</p>
-                  <p>{t("about.fullstack.skills")}</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-              <div className="services color-3">
-                <span className="icon">
-                  <i className="icon-bulb" />
-                </span>
-                <div className="desc">
-                  <h3>{t("about.systems.title")}</h3>
-                  <p>{t("about.systems.description")}</p>
-                  <p>{t("about.systems.skills")}</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-              <div className="services color-5">
-                <span className="icon">
-                  <i className="icon-data" />
-                </span>
-                <div className="desc">
-                  <h3>{t("about.ai.title")}</h3>
-                  <p>{t("about.ai.description")}</p>
-                  <p>{t("about.ai.skills")}</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 text-center animate-box">
-              <div className="services color-6">
-                <span className="icon">
-                  <i className="icon-robo" />
-                </span>
-                <div className="desc">
-                  <h3>{t("about.obs.title")}</h3>
-                  <p>{t("about.obs.description")}</p>
-                  <p>{t("about.obs.skills")}</p>
-                </div>
-              </div>
-            </div>
+            {EXPERTISE_ITEMS.map(({ key, color, icon }) => (
+              <ServiceCard
+                key={key}
+                color={color}
+                icon={icon}
+                title={t(`about.${key}.title`)}
+                description={t(`about.${key}.description`)}
+                skills={t(`about.${key}.skills`)}
+              />
+            ))}
           </div>
         </div>
       </section>

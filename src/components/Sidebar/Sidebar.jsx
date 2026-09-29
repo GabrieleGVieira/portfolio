@@ -1,5 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import IconLink from '../common/IconLink';
+import links from '../../data/links';
+
+const NAV_ITEMS = [
+  { section: 'about', href: '#about' },
+  { section: 'timeline', href: '#timeline' },
+  { section: 'projects', href: '#' },
+];
+
+const SOCIAL_LINKS = [
+  { href: links.linkedin, icon: 'icon-linkedin2', ariaLabel: 'LinkedIn' },
+  { href: links.github, icon: 'icon-github', ariaLabel: 'GitHub' },
+];
 
 export default function Sidebar() {
   const { t } = useTranslation();
@@ -27,55 +40,29 @@ export default function Sidebar() {
               <a href="index.html">{t('sidebar.name')}</a>
             </h1>
             <span className="email">
-              <i className="icon-mail"></i> gabrielevieira011@gmail.com
+              <i className="icon-mail"></i> gabrielevieira.co@gmail.com
             </span>
           </div>
           <nav id="colorlib-main-menu" role="navigation" className="navbar">
             <div id="navbar" className="collapse">
               <ul>
-                <li className="active">
-                  <a href="#home" data-nav-section="home">
-                    {t('nav.introduction')}
-                  </a>
-                </li>
-                <li>
-                  <a href="#about" data-nav-section="about">
-                    {t('nav.about')}
-                  </a>
-                </li>
-                <li>
-                  <a href="#timeline" data-nav-section="timeline">
-                    {t('nav.timeline')}
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-nav-section="projects">
-                    {t('nav.projects')}
-                  </a>
-                </li>
+                {NAV_ITEMS.map(({ section, href }, index) => (
+                  <li key={section} className={index === 0 ? 'active' : undefined}>
+                    <a href={href} data-nav-section={section}>
+                      {t(`nav.${section}`)}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </nav>
           <nav id="colorlib-main-menu">
             <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/gabrielevieira/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="icon-linkedin2" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/GabrieleGVieira"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="icon-github"></i>
-                </a>
-              </li>
+              {SOCIAL_LINKS.map(({ href, icon, ariaLabel }) => (
+                <li key={icon}>
+                  <IconLink href={href} icon={icon} ariaLabel={ariaLabel} />
+                </li>
+              ))}
             </ul>
           </nav>
           <div className="colorlib-footer">
