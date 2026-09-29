@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/gabriele-vieira/static/js/2.9cebefea.chunk.js"
   },
   {
-    "revision": "704e6d2a4ef19ca8134ac0f44f7d754b",
+    "revision": "00a90ed6e022d22104a46c9e1422741c",
     "url": "/gabriele-vieira/index.html"
   }
 ];
